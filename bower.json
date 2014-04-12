@@ -21,7 +21,8 @@
     "jquery": "~2.1.0",
     "kendo-ui": "~2014.1.318",
     "bootbox": "latest",
-    "bootstrap-tour": "latest"
+    "bootstrap-tour": "latest",
+    "nette.ajax.js": "~1.2.2",
 },
   "resolutions": {
     "jquery": "~2.1.0"
