@@ -1,0 +1,23 @@
+{
+  "name": "webcms2",
+  "version": "0.1.0",
+  "authors": [
+    "Tomas Voslar <tomas.voslar@webcook.cz>"
+  ],
+  "description": "WebCMS2 client side libraries.",
+  "main": "js/Webcms.main.js",
+  "keywords": [
+    "Webcms2",
+    "javaScript",
+    "css",
+    "backend"
+  ],
+  "license": "MIT",
+  "homepage": "www.webcook.cz",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
