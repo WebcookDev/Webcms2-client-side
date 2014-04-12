@@ -23,6 +23,9 @@
     "bootbox": "latest",
     "bootstrap-tour": "latest"
 },
+  "resolutions": {
+    "jquery": "~2.1.0"
+  },
   "ignore": [
     "**/.*",
     "bower_components",
