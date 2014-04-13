@@ -23,6 +23,7 @@
     "bootbox": "latest",
     "bootstrap-tour": "latest",
     "nette.ajax.js": "~1.2.2",
+    "history.nette.ajax.js": "~1.0.0"
 },
   "resolutions": {
     "jquery": "~2.1.0"
