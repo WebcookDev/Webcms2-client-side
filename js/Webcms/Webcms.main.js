@@ -87,8 +87,10 @@ Webcms.prototype = {
 		}).ajaxStop(function() {
 			self.afterReload();
 			
-			self.tour.bootTour.init();
-			self.tour.bootTour.start(true);
+			if(!self.tour.bootTour.ended()){
+				self.tour.bootTour.init();
+				self.tour.bootTour.start();
+			}
 			
 			$('.context-menu').remove();
 			$('#loader').removeClass("active");
