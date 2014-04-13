@@ -228,19 +228,14 @@ WebcmsTour.prototype = {
 								</div>\n\
 							</div>",
 
-				// Zrejme nutne predem implementovat History push state, pro zmenu adresy
-				//redirect : function(path){
-				//	$.nette.ajax(path);
-				//}
+				redirect : function(path){
+					 $('body').remove('.jq_tourLink');
+					 $('body').append($('<a href="'+path+'" class="ajax jq_tourLink"></a>'));
+					 $('.jq_tourLink').click();
+				}
 			});
 			
 			selfwt.bootTour.addSteps(selfwt.getSteps());
-
-			// Initialize the tour
-			selfwt.bootTour.init();
-
-			// Start the tour
-			selfwt.bootTour.start();
 		});
 
 		$(selfwt.tutorialTrigger).on("click", function() {

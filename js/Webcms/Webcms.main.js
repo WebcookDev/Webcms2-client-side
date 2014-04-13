@@ -87,6 +87,9 @@ Webcms.prototype = {
 		}).ajaxStop(function() {
 			self.afterReload();
 			
+			self.tour.bootTour.init();
+			self.tour.bootTour.start(true);
+			
 			$('.context-menu').remove();
 			$('#loader').removeClass("active");
 			$('.spinner-wrapper').hide();
