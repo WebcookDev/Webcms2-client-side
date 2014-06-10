@@ -33,10 +33,9 @@ WebcmsFilesystem.prototype = {
 				containerId: $(this).data('container-id')
 			};
 
-			$(document).on('click','.jq_filesAdd',  function(e) {
+			$(document).on('click', '.jq_filesAdd',  function(e) {
 				e.preventDefault();
 
-				// 
 				$('.jq_selected:checked').each(function() {
 
 					var single = $(this).attr('type') == 'radio' ? true : false;
