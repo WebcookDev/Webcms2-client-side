@@ -54,7 +54,7 @@ WebcmsFilesystem.prototype = {
 			});
 		});
 
-		$(".jq_fileDelete").on('click', function(e) {
+		$(document).on('click', '.jq_fileDelete', function(e) {
 			e.preventDefault();
 
 			$(this).closest('.jq_fileBox').remove();
