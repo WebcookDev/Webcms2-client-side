@@ -33,7 +33,7 @@ WebcmsFilesystem.prototype = {
 				containerId: $(this).data('container-id')
 			};
 
-			$('.jq_filesAdd').on('click', function(e) {
+			$(document).on('click','.jq_filesAdd',  function(e) {
 				e.preventDefault();
 
 				// 
