@@ -5,7 +5,7 @@
  */
 function Webcms() {
 	
-	this.defaultConfirm = null;
+	this.defaultConfirm = 'Confirm action?';
 	this.externals = new Array();
 	this.filesystem = null;
 	this.tour = null;
