@@ -229,7 +229,7 @@ WebcmsTour.prototype = {
 							</div>",
 
 				redirect : function(path){
-					 $('body').remove('.jq_tourLink');
+					 $('.jq_tourLink').remove();
 					 $('body').append($('<a href="'+path+'" class="ajax jq_tourLink"></a>'));
 					 $('.jq_tourLink').click();
 				}
