@@ -10,6 +10,7 @@ function Webcms() {
 	this.filesystem = null;
 	this.tour = null;
 	this.translator = null;
+	this.basePath = null;
 	
 	this.init();
 }
@@ -22,7 +23,8 @@ Webcms.prototype = {
 		self.translator = new WebcmsTranslator(self);
 		self.filesystem = new WebcmsFilesystem(self);
 		self.tour = new WebcmsTour(self);
-		
+		self.basePath = $('base').attr('href');
+
 		/**
 		 * Nette ajax Grido extension.
 		 * @author Petr BugyĂ­k
@@ -170,7 +172,8 @@ Webcms.prototype = {
 			filebrowserBrowseUrl: basePath + '/admin/filesystem?dialog=1&multiple=0',
 			filebrowserImageBrowseUrl: basePath + '/admin/filesystem?dialog=1&filter=images&multiple=0',
 			allowedContent: true,
-			entities: false
+			entities: false,
+			baseHref : self.basePath
 		});
 
 	}
