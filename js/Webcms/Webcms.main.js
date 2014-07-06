@@ -43,6 +43,12 @@ Webcms.prototype = {
 				{
 					this.selector.trigger('success.ajax.grido', payload);
 
+					for (snippet in payload.snippets) {
+						if (payload.snippets[snippet].indexOf('alert-success') !== -1) {
+							$('#myModal').modal('hide');
+						}
+					}
+
 					//scroll up after ajax update
 					$('html, body').animate({scrollTop: 0}, 400);
 				}
