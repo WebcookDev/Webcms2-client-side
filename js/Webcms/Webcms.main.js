@@ -183,7 +183,8 @@ Webcms.prototype = {
 			filebrowserImageBrowseUrl: basePath + '/admin/filesystem?dialog=1&filter=images&multiple=0',
 			allowedContent: true,
 			entities: false,
-			baseHref : self.basePath
+			baseHref : self.basePath,
+			contentsCss: self.basePath + 'css/all.php'
 		});
 
 	}
