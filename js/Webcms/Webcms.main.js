@@ -11,6 +11,7 @@ function Webcms() {
 	this.tour = null;
 	this.translator = null;
 	this.basePath = null;
+	this.initiated = false;
 	
 	this.init();
 }
@@ -32,20 +33,20 @@ Webcms.prototype = {
 		 */
 		"use strict";
 		$.nette.ext('grido',
+			{
+				load: function()
 				{
-					load: function()
-					{
-						this.selector = $('.grido');
-						this.selector.grido();
-					},
-					success: function(payload)
-					{
-						this.selector.trigger('success.ajax.grido', payload);
+					this.selector = $('.grido');
+					this.selector.grido();
+				},
+				success: function(payload)
+				{
+					this.selector.trigger('success.ajax.grido', payload);
 
-						//scroll up after ajax update
-						$('html, body').animate({scrollTop: 0}, 400);
-					}
-				}, {
+					//scroll up after ajax update
+					$('html, body').animate({scrollTop: 0}, 400);
+				}
+			}, {
 			selector: null
 		});
 
@@ -59,8 +60,11 @@ Webcms.prototype = {
 		});
 
 		$.nette.init(function(ajaxHandler) {
-			$(document).on('click', 'a.ajax:not(.no-ajax)', ajaxHandler);
-			$(document).on('click', 'form.ajax :submit', ajaxHandler);
+			if (!self.initiated) {
+				$(document).on('click', 'a.ajax:not(.no-ajax)', ajaxHandler);
+				$(document).on('click', 'form.ajax :submit', ajaxHandler);
+				self.initiated = true;
+			}
 		});
 
 		// links context menu
