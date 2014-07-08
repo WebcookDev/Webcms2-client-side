@@ -16,7 +16,7 @@
   "homepage": "www.webcook.cz",
   "dependencies":{
     "bootstrap": "~3.1.1",
-    "ckeditor": "full/4.3.4",
+    "ckeditor": "ckeditor#full/stable",
     "grido": "~1.0.6",
     "jquery": "~2.1.0",
     "kendo-ui": "2014.1.318",
