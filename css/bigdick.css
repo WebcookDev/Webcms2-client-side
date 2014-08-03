@@ -78,14 +78,63 @@ aside {
 	padding-top: 80px;
 	width: 220px;
 	border-right: 1px solid #dfdfdf;
+	background-color: #fff;
 	height: 100%;
+}
+
+aside .structure-title {
+	display: inline-block;
+	padding: 3px;
+	background-color: #f4f4f8;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #9d9d9d;
+}
+
+aside .nav > li.active > a {
+	border-right: 2px solid #6b4394;
+	margin-right: -2px;
+	font-weight: bold;
+	color: #6b4394;
+}
+
+aside .nav > li {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+aside .nav > li > ul {
+	border-top: 1px solid #dfdfdf;
+}
+
+aside .nav > li > ul > li > ul > li > a {
+	padding-left: 30px;
+}
+
+aside .nav > li > ul > li > ul > li > ul > li a {
+	padding-left: 40px;
+}
+
+aside .nav > li > ul > li > ul {
+	background-color: #f4f4f8;
+}
+
+aside .nav > li > ul > li > ul > li > ul > li {
+	background-color: #ebebeb;
+}
+
+aside .nav > li > ul > li:last-child {
+  	border-bottom: 0px;
+}
+
+aside .nav > li > a {
+	color: #484848;
 }
 
 /* CONTENT */
 .content {
-	margin-left: 250px;
+	margin-left: 205px;
+	padding-top: 0px;
 }
-
 
 
 /* FILE UPLOADER */
