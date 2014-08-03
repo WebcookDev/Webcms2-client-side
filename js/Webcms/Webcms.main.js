@@ -171,6 +171,21 @@ Webcms.prototype = {
 				setTimeout("self.hideSidebar()", 500);
 			}
 		});
+
+		$(document).on('click', "a.subopen", function(event) {
+			event.preventDefault();
+			$(this).parent().toggleClass('open');
+		});
+
+		/*$(document).on('click', ".sub ul a", function(event) {
+			$(this).parent().parent().parent().toggleClass('open');
+			$(this).parent().parent().parent().addClass('active');
+		});
+
+		$(document).on('click', ".navbar ul a", function(event) {
+			$('.navbar ul li').removeClass('active');
+			$(this).parent().addClass('active');
+		});*/
 	},
 	
 	hideSidebar : function(){
