@@ -1,8 +1,10 @@
 {
   "name": "webcms2",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "authors": [
-    "Tomas Voslar <tomas.voslar@webcook.cz>"
+    "Tomas Voslar <tomas.voslar@webcook.cz>",
+    "Tomas Bdinka <tomas.bdinka@webcook.cz>",
+    "Jakub Sanda <jakub.sanda@webcook.cz>"
   ],
   "description": "WebCMS2 client side libraries.",
   "main": "js/Webcms.main.js",
