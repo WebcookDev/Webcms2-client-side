@@ -74,7 +74,7 @@ Webcms.prototype = {
 		});
 
 		// links context menu
-		$(document).on('contextmenu', 'a', function(e) {
+		/*$(document).on('contextmenu', 'a', function(e) {
 			e.preventDefault();
 
 			$('.context-menu').remove();
@@ -87,7 +87,7 @@ Webcms.prototype = {
 
 		$(document).on('click', function() {
 			$('.context-menu').remove();
-		});
+		});*/
 
 		//ajax loader animation
 		$(document).ajaxStart(function() {
