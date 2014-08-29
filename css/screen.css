@@ -154,7 +154,7 @@ footer {
 }
 
 .popover, .popover-navigation {
-	min-width: 350px;
+	min-width: 367px;
 }
 
 .popover-title {
@@ -249,6 +249,15 @@ li.k-file div.file-wrapper
 	color: #dfdbe3 !important;
 	font-weight: 600;
 	padding: 25px 30px;
+}
+
+.navbar li button.tabButton {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar li button.tabButton:hover, .navbar li.open button {
+	background-color: #271b33 !important;
 }
 
 .navbar li a.active, .navbar li a:hover, .navbar li.open a {
@@ -911,6 +920,50 @@ body.login-page .input-group .form-control {
 	content: "\e184";
 }
 
+.page-heading .nav-tabs > li > a#tUsers:after {
+	content: "\e008";
+}
+
+.page-heading .nav-tabs > li > a#tRoles:after {
+	content: "\270f";
+}
+
+.page-heading .nav-tabs > li > a#tLanguages:after {
+	content: "\e135";
+}
+
+.page-heading .nav-tabs > li > a#tTranslates:after {
+	content: "\e111";
+}
+
+.page-heading .nav-tabs > li > a#tCloning:after {
+	content: "\e031";
+}
+
+.page-heading .nav-tabs > li > a#tTranslator:after {
+	content: "\e178";
+}
+
+.page-heading .nav-tabs > li > a#tFunctions:after {
+	content: "\e136";
+}
+
+.page-heading .nav-tabs > li > a#tUpdate:after {
+	content: "\e121";
+}
+
+.page-heading .nav-tabs > li > a#tPages:after {
+	content: "\e032";
+}
+
+.page-heading .nav-tabs > li > a#tSorting:after {
+	content: "\e150";
+}
+
+.page-heading .nav-tabs > li > a#tNews:after {
+	content: "\e135";
+}
+
 /* wysiwyg wrap */
 .control-group {
 	padding: 0px 30px;
@@ -1196,6 +1249,69 @@ body.login-page .flash.warning {
 
 .alert .close:hover, .flash .close:hover, .alert-warning .close:hover {
 	opacity: 1;
+}
+
+
+.buttonWrap {
+	padding-left: 19px;
+}
+
+.btn-primary, .btn-danger, .search, .reset {
+	padding-left: 15px !important;
+}
+
+.filesDialog {
+	padding-left: 45px !important;
+}
+
+.search, .reset {
+	color: #000;
+}
+
+.paginator a {
+	color: #000;
+}
+
+.paginator span {
+	font-weight: bold;
+	color: #484848 !important;
+}
+
+.boxesForm {
+	margin: 25px 0;
+}
+
+.boxesText {
+	line-height: 45%;
+}
+
+.popover-navigation .btn {
+	padding: 0 15px;
+	background-color: #51b766;
+}
+
+.popover-navigation .btn[data-role="end"] {
+	background-color: #d2322d;
+}
+
+.context-menu {
+	bottom: -50px;
+	left: 0;
+	background-color: #392B47 !important;
+	opacity: 1;
+	width: 150px;
+	height: 50px;
+	z-index: 10000;
+}
+
+.context-menu a {
+	color: #fff;
+	display: block;
+	padding: 15px 20px;
+}
+
+.context-menu a:hover {
+	color: #fff;
 }
 
 
