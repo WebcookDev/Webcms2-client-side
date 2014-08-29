@@ -3,10 +3,6 @@ function WebcmsFilesystem(context) {
 
 	this.context = context;
 	this.path = new String();
-	this.uploadUrl = new String();
-	this.url = new String();
-	this.newDirectoryTitle = new String();
-	this.newDirectoryUrl = new String();
 
 	this.init();
 };
@@ -25,38 +21,6 @@ WebcmsFilesystem.prototype = {
 	getPath: function(path) {
 		return this.path;
 	},
-	setUploadUrl: function(url) {
-		this.uploadUrl = url;
-	},
-
-	setUrl: function(url) {
-		this.url = url;
-	},
-	setNewDirectoryTitle: function(title) {
-		this.newDirectoryTitle = title;
-	},
-	setNewDirectoryUrl: function(url) {
-		this.newDirectoryUrl = url;
-	},
-
-	progressHandlingFunction: function(e) {
-	    if(e.lengthComputable){
-	    	var percentage = Math.round((e.loaded / e.totalSize) * 100, 2);
-	    	var totalSize = Math.round(e.totalSize / 1024 / 1024);
-	    	var uploaded = Math.round(e.loaded / 1024 / 1024);
-
-	    	$("#totalSize").html(totalSize + "Mb");
-	    	$("#uploaded").html(uploaded + "Mb");
-	    	$("#progress").css({"width": percentage + "%"});
-	    }
-	},
-
-	onComplete: function() {
-		console.log('done');
-		$("#uploadStatus").hide();
-		$.nette.ajax({ url : selffs.url, data : { path : selffs.path } });
-	},
-
 	__registerListeners: function() {
 
 		$(document).on('click', '.filesDialog', function(e) {
@@ -93,51 +57,6 @@ WebcmsFilesystem.prototype = {
 			e.preventDefault();
 
 			$(this).closest('.jq_fileBox').remove();
-		});
-
-		$(document).on('submit', '#filesystemForm', function(e){
-			e.preventDefault();
-			$("#uploadStatus").show();
-
-			var formData = new FormData($('#filesystemForm')[0]);
-			$.ajax({
-		        url: selffs.uploadUrl + '&path=' + selffs.path,  //Server script to process data
-		        type: 'POST',
-		        xhr: function() {  // Custom XMLHttpRequest
-		            var myXhr = $.ajaxSettings.xhr();
-		            if(myXhr.upload){ // Check if upload property exists
-		                myXhr.upload.addEventListener('progress', selffs.progressHandlingFunction, false); 
-		            }
-		            return myXhr;
-		        },
-		        //Ajax events
-		        success: selffs.onComplete,
-		        error: function(e) {
-		        	console.log(e);
-		        },
-		        // Form data
-		        data: formData,
-		        //Options to tell jQuery not to process data or worry about content-type.
-		        cache: false,
-		        contentType: false,
-		        processData: false
-		    });
-		});
-
-		$(document).on('click', '.dir',function(){
-
-			selffs.setPath($(this).data('path'));
-			console.log(selffs.path);
-		});
-
-		$(document).on('click', '.jq_newDir', function(e){
-			e.preventDefault();
-			
-			bootbox.prompt(selffs.newDirectoryTitle, function(text){
-				if(text) {
-					$.nette.ajax({ url : selffs.newDirectoryUrl, data : { name : text, path: selffs.path } })
-				}
-			});
 		});
 	}
 };
