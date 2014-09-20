@@ -26,6 +26,8 @@ Webcms.prototype = {
 		self.tour = new WebcmsTour(self);
 		self.basePath = $('base').attr('href');
 
+		self.registerDatePickers();
+		
 		/**
 		 * Nette ajax Grido extension.
 		 * @author Petr BugyĂ­k
@@ -48,6 +50,16 @@ Webcms.prototype = {
 							$('#myModal').modal('hide');
 						}
 					}
+
+					self.registerDatePickers();
+
+					$(document).off('change', '.daterange');
+					$(document).on('change', '.daterange', function(){
+						var splitted = $(this).val().split('-');
+						if (splitted.length > 2) {
+							$(this).val(splitted[0] + '-' + splitted[2]);
+						}
+					});
 
 					//scroll up after ajax update
 					$('html, body').animate({scrollTop: 0}, 400);
@@ -121,6 +133,19 @@ Webcms.prototype = {
 		});
 
 		self.initTextEditors();
+	},
+	registerDatePickers: function() {
+		$('.date').datepicker({
+			format: "m.d.yyyy",
+			autoclose: true
+		});
+
+		$('.daterange').datepicker({
+			format: "m.d.yyyy",
+			multidate: true,
+			multidateSeparator: "-",
+			autoclose: true
+		});
 	},
 	registerExternal: function(ext) {
 		this.externals.push(ext);
