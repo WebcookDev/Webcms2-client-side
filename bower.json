@@ -23,7 +23,8 @@
     "bootbox": "latest",
     "bootstrap-tour": "latest",
     "nette.ajax.js": "~1.2.2",
-    "history.nette.ajax.js": "~1.0.0"
+    "history.nette.ajax.js": "~1.0.0",
+    "bootstrap-datepicker": "~1.3.0"
 },
   "resolutions": {
     "jquery": "~2.1.0"
