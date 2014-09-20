@@ -137,14 +137,16 @@ Webcms.prototype = {
 	registerDatePickers: function() {
 		$('.date').datepicker({
 			format: "m.d.yyyy",
-			autoclose: true
+			autoclose: true,
+			language: "cs"
 		});
 
 		$('.daterange').datepicker({
 			format: "m.d.yyyy",
 			multidate: true,
 			multidateSeparator: "-",
-			autoclose: true
+			autoclose: true,
+			language: "cs"
 		});
 	},
 	registerExternal: function(ext) {
