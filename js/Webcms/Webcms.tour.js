@@ -71,7 +71,7 @@ WebcmsTour.prototype = {
 				"placement": "top"
 			},
 			{
-				"path": "/languages/translates",
+				"path": "/languages/translations",
 				"element": "#tTranslates",
 				"title": selfwt.context.translator.getTranslation("Translations"),
 				"content": selfwt.context.translator.getTranslation("Translations description"),
