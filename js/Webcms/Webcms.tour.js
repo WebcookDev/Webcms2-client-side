@@ -71,21 +71,21 @@ WebcmsTour.prototype = {
 				"placement": "top"
 			},
 			{
-				"path": "/languages/translations",
+				"path": "/translations",
 				"element": "#tTranslates",
 				"title": selfwt.context.translator.getTranslation("Translations"),
 				"content": selfwt.context.translator.getTranslation("Translations description"),
 				"placement": "top"
 			},
 			{
-				"path": "/languages/cloning",
+				"path": "/cloning",
 				"element": "#tCloning",
 				"title": selfwt.context.translator.getTranslation("Cloning"),
 				"content": selfwt.context.translator.getTranslation("Cloning description"),
 				"placement": "top"
 			},
 			{
-				"path": "/languages/translator",
+				"path": "/translator",
 				"element": "#tTranslator",
 				"title": selfwt.context.translator.getTranslation("Translator"),
 				"content": selfwt.context.translator.getTranslation("Translator description"),
