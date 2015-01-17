@@ -78,6 +78,11 @@ WebcmsFilesystem.prototype = {
 
 					var data = $(this).data();
 					var id = parseInt($('input:radio:last').val()) + 1;
+					
+					if (isNaN(id)) {
+						id = 1;
+					}
+					
 					if (!single) {
 						$(options.container).append('<div class="col-md-3 jq_fileBox"><div class="img-thumbnail"><img src="' + data.thumbnail + '" /><input type="hidden" name="files[]" value="' + data.path + '" /><input class="form-control" type="text" name="fileNames[]" /><input class="form-control" type="radio" name="fileDefault[]" value="' + id + '" /><span class="btn btn-default jq_fileDelete">&times</span></div></div>');
 					} else {
