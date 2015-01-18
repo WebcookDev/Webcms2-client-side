@@ -320,6 +320,7 @@ aside {
 	border-right: 1px solid #dfdfdf;
 	background-color: #fff;
 	height: 100%;
+	overflow: auto;
 }
 
 aside .structure-title {
