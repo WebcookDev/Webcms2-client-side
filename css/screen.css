@@ -10,25 +10,6 @@ h1 {
 	color: #3484D2;
 }
 
-.float-r {
-	float: right;
-}
-
-.float-l {
-	float: left;
-}
-
-.clear {
-	clear:both;
-	height:1px;
-	display:block;
-	margin:0px 0 0;
-	padding:0px;
-	overflow:hidden;
-	font-size:1px;
-	line-height:1px;
-}
-
 .system-menu {
 	max-width: 100% !important;
 }
@@ -173,7 +154,7 @@ footer {
 }
 
 .popover, .popover-navigation {
-	min-width: 367px;
+	min-width: 350px;
 }
 
 .popover-title {
@@ -268,15 +249,6 @@ li.k-file div.file-wrapper
 	color: #dfdbe3 !important;
 	font-weight: 600;
 	padding: 25px 30px;
-}
-
-.navbar li button.tabButton {
-	background-color: transparent;
-	border: none;
-}
-
-.navbar li button.tabButton:hover, .navbar li.open button {
-	background-color: #271b33 !important;
 }
 
 .navbar li a.active, .navbar li a:hover, .navbar li.open a {
@@ -940,50 +912,6 @@ body.login-page .input-group .form-control {
 	content: "\e184";
 }
 
-.page-heading .nav-tabs > li > a#tUsers:after {
-	content: "\e008";
-}
-
-.page-heading .nav-tabs > li > a#tRoles:after {
-	content: "\270f";
-}
-
-.page-heading .nav-tabs > li > a#tLanguages:after {
-	content: "\e135";
-}
-
-.page-heading .nav-tabs > li > a#tTranslates:after {
-	content: "\e111";
-}
-
-.page-heading .nav-tabs > li > a#tCloning:after {
-	content: "\e031";
-}
-
-.page-heading .nav-tabs > li > a#tTranslator:after {
-	content: "\e178";
-}
-
-.page-heading .nav-tabs > li > a#tFunctions:after {
-	content: "\e136";
-}
-
-.page-heading .nav-tabs > li > a#tUpdate:after {
-	content: "\e121";
-}
-
-.page-heading .nav-tabs > li > a#tPages:after {
-	content: "\e032";
-}
-
-.page-heading .nav-tabs > li > a#tSorting:after {
-	content: "\e150";
-}
-
-.page-heading .nav-tabs > li > a#tNews:after {
-	content: "\e135";
-}
-
 /* wysiwyg wrap */
 .control-group {
 	padding: 0px 30px;
@@ -1062,20 +990,6 @@ body.login-page .input-group .form-control {
 .btn {
 	border-radius: 0px;
 	border: 0 none;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.btn.green {
-	background-color: #7ca02e;
-}
-
-.btn.grey {
-	background-color: #a8a8a8;
-}
-
-.btn.purple {
-	background-color: #392b47;
 }
 
 .btn-lg {
@@ -1284,261 +1198,5 @@ body.login-page .flash.warning {
 .alert .close:hover, .flash .close:hover, .alert-warning .close:hover {
 	opacity: 1;
 }
-
-
-.buttonWrap {
-	padding-left: 19px;
-}
-
-.btn-primary, .btn-danger, .search, .reset {
-	padding-left: 15px !important;
-}
-
-.filesDialog {
-	padding-left: 45px !important;
-}
-
-.search, .reset {
-	color: #000;
-}
-
-.paginator a {
-	color: #000;
-}
-
-.paginator span {
-	font-weight: bold;
-	color: #484848 !important;
-}
-
-.boxesForm {
-	margin: 25px 0;
-}
-
-.boxesText {
-	line-height: 45%;
-}
-
-.popover-navigation .btn {
-	padding: 0 15px;
-	background-color: #51b766;
-}
-
-.popover-navigation .btn[data-role="end"] {
-	background-color: #d2322d;
-}
-
-.context-menu {
-	bottom: -50px;
-	left: 0;
-	background-color: #392B47 !important;
-	opacity: 1;
-	width: 150px;
-	height: 50px;
-	z-index: 10000;
-}
-
-.context-menu a {
-	color: #fff;
-	display: block;
-	padding: 15px 20px;
-}
-
-.context-menu a:hover {
-	color: #fff;
-}
-
-a.back {
-	color: #3b3b3b;
-	position: relative;
-	padding-left: 34px;
-	margin: 20px 0;
-	display: block;
-}
-
-a.back:after {
-	font-family: 'Glyphicons Halflings';
-	position: absolute;
-	top: 0;
-	left: 5px;
-	display: inline-block;
-	font-style: normal;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	color: rgba(0,0,0,0.3);
-	content: "\e091";
-}
-
-.info {
-	position: relative;
-	padding-left: 34px;
-}
-
-.info:after {
-	font-family: 'Glyphicons Halflings';
-	position: absolute;
-	top: 1px;
-	left: 5px;
-	display: inline-block;
-	font-style: normal;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	color: rgba(0,0,0,0.9);
-	content: "\e086";
-}
-
-/*overwrite input class .form-control*/
-.form-control {
-	border-radius: 0;
-	border: 1px solid #d8d8d8;
-	padding: 22px 12px;
-}
-
-.form-control.green {
-	background-color: #c4db93;
-	border-color: #c4db93;
-}
-
-
-/*overwrite grido styles*/
-.grido {
-	margin: 30px 0;
-}
-
-.grido table {
-	box-shadow: none;
-	border: none;
-	border-radius: 0;
-}
-
-.grido thead {
-	font-size: 12px;
-	color: #797979;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.grido th, .grido tr, .grido td {
-	border: none !important;
-}
-
-.grido td {
-	color: #3b3b3b;
-	font-weight: bold;
-	/*padding-top: 15px !important;
-	padding-bottom: 15px !important;*/
-	vertical-align: middle !important;
-}
-
-.grido tbody>tr:nth-child(odd)>td {
-	background-color: #d8d8d8;
-}
-
-.paginator a, .paginator span {
-	color: #262626;
-	padding: 5px 20px;
-}
-
-
-
-/*modul invest form*/
-/*TODO - premistit k modulu START*/
-
-.btn-square {
-	position: relative;
-	display: inline-block;
-	width: 250px;
-	height: 250px;
-	background-color: #7ca02e;
-	margin: 30px 40px 30px 0;
-	font-size: 18px;
-	color: #fff;
-	text-align: center;
-}
-
-.btn-square.add {
-	background: #7ca02e url('../images/ico-add.png') center 70px no-repeat;
-}
-
-.btn-square span {
-	position: absolute;
-	top: 160px;
-	display: block;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.btn-square:hover {
-	color: #fff !important;
-	text-decoration: none;
-}
-
-.btn-square.active {
-	background: #392b47 url('../images/ico-active.png') center 70px no-repeat;
-}
-
-.btn-square.inactive {
-	background: #2e2a31 url('../images/ico-inactive.png') center 70px no-repeat;
-}
-
-span.number {
-	color: #fff;
-	display: inline;
-	font-size: 18px;
-	font-weight: bold;
-	background-color: #b4b4b4;
-	border-radius: 12px;
-	padding: 5px 12px;
-	margin-left: 15px;
-}
-
-.changeActiveStatus {
-	margin-left: 40px;
-	font-weight: bold;
-	color: #3b3b3b;
-	padding: 10px 25px;
-	background-color: #e5e5e5;
-	margin-bottom: 20px;
-}
-
-.changeActiveStatus a {
-	margin-left: 20px;
-}
-
-.contactInfo {
-	padding: 30px;
-	background-color: #e5e5e5;
-	color: #3b3b3b;
-	line-height: 180%;
-	font-size: 16px;
-}
-
-p.headTitle {
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-top: 25px;
-	color: #797979;
-	font-size: 12px;
-}
-
-p.numberOfInvestments {
-	color: #3b3b3b;
-	font-size: 32px;
-	font-weight: bold;
-}
-
-p.investmentsAmount {
-	color: #3b3b3b;
-	font-size: 14px;
-}
-
-/*TODO - premistit k modulu END*/
-
 
 
