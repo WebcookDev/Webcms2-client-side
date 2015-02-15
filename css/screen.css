@@ -1395,7 +1395,8 @@ a.back:after {
 .form-control {
 	border-radius: 0;
 	border: 1px solid #d8d8d8;
-	padding: 22px 12px;
+	padding: 12px;
+	height: 100%;
 }
 
 .form-control.green {
