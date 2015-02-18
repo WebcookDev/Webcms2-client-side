@@ -1399,6 +1399,10 @@ a.back:after {
 	height: 100%;
 }
 
+input[type=radio] {
+	min-height: 20px;
+}
+
 .form-control.green {
 	background-color: #c4db93;
 	border-color: #c4db93;
