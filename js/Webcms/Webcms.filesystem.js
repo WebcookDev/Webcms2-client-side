@@ -56,6 +56,12 @@ WebcmsFilesystem.prototype = {
 		$("#uploadStatus").hide();
 		$.nette.ajax({ url : selffs.url, data : { path : selffs.path } });
 	},
+	
+	imageExists: function(url) {
+		var img = new Image();
+	    	img.src = url;
+	    	return img.height != 0;
+	},
 
 	__registerListeners: function() {
 
@@ -81,6 +87,11 @@ WebcmsFilesystem.prototype = {
 					
 					if (isNaN(id)) {
 						id = 1;
+					}
+					
+					if (!selffs.imageExists(data.thumbnail)) {
+						data.thumbnail = data.thumbnail.substring( 0, data.thumbnail.indexOf( "thumbnail" ) );
+						data.thumbnail = data.thumbnail+'admin-client/webcms2/images/nothing-here-150x150.png';
 					}
 					
 					if (!single) {
