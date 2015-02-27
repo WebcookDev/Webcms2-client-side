@@ -89,10 +89,10 @@ WebcmsFilesystem.prototype = {
 						id = 1;
 					}
 					
-					/*if (!selffs.imageExists(data.thumbnail)) {
+					if (!selffs.imageExists(data.thumbnail)) {
 						data.thumbnail = data.thumbnail.substring( 0, data.thumbnail.indexOf( "thumbnail" ) );
 						data.thumbnail = data.thumbnail+'admin-client/webcms2/images/nothing-here-150x150.png';
-					}*/
+					}
 					
 					if (!single) {
 						$(options.container).append('<div class="col-md-3 jq_fileBox"><div class="img-thumbnail"><img src="' + data.thumbnail + '" /><input type="hidden" name="files[]" value="' + data.path + '" /><input class="form-control" type="text" name="fileNames[]" placeholder="Název souboru" /><input class="form-control" type="radio" name="fileDefault[]" value="' + id + '" /><span class="btn btn-default jq_fileDelete">&times</span></div></div>');
