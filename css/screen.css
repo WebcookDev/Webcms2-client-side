@@ -1189,9 +1189,9 @@ body.login-page #snippet--flashMessages {
 	color: #fff;
 	background-color: #121212;
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	padding: 0px 0px 0px 50px;
+	/*height: 40px;*/
+	line-height: 20px;
+	padding: 9px 15px 9px 50px;
 	border: 0px;
 	border-radius: 0px;
 	margin-bottom: 0px;
