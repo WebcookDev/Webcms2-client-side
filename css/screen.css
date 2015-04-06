@@ -984,6 +984,14 @@ body.login-page .input-group .form-control {
 	content: "\e135";
 }
 
+.page-heading .nav-tabs > li > a#tScripts:after {
+	content: "\e142";
+}
+
+.page-heading .nav-tabs > li > a#tStyles:after {
+	content: "\e063";
+}
+
 /* wysiwyg wrap */
 .control-group {
 	padding: 0px 30px;
@@ -1448,6 +1456,21 @@ input[type=radio] {
 	padding: 5px 20px;
 }
 
+/*bootstrap-toggle*/
+
+div.toggle {
+	margin: 0px 20px 0px -20px;
+	line-height: 20px;
+	border-radius: 3px;
+}
+
+div.toggle-group .btn {
+	position: absolute;
+}
+
+div.toggle-group span.toggle-handle {
+	display: none;
+}
 
 
 /*modul invest form*/
