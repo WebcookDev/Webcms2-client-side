@@ -884,6 +884,22 @@ body.login-page .input-group .form-control {
 	content: "\e136";
 }
 
+.page-heading .nav-tabs > li > a.shoppingCart:after {
+	content: "\e116";
+}
+
+.page-heading .nav-tabs > li > a.shoppingCategory:after {
+	content: "\e137";
+}
+
+.page-heading .nav-tabs > li > a.shoppingProduct:after {
+	content: "\e040";
+}
+
+.page-heading .nav-tabs > li > a.shoppingParameter:after {
+	content: "\e041";
+}
+
 .page-heading .nav-tabs > li > a#tSettings:after {
 	content: "\e019";
 }
